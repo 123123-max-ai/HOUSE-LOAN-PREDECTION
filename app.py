@@ -5,6 +5,9 @@ import joblib
 # Create Flask app
 app = Flask(__name__)
 
+if __name__ == "__main__":
+    app.run()
+
 # Load trained model
 model = joblib.load("house_price_model.pkl")
 
